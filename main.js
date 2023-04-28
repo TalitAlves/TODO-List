@@ -53,8 +53,8 @@ const addTask = (event) => {
   newTask.textContent = takslist[takslist.length - 1];
 
   const button = document.createElement("button");
-  button.textContent = "Delete";
-  button.classList.add("button", "btn-add");
+  button.textContent = "X";
+  button.classList.add("button", "btn-delete");
   li.appendChild(button);
 
   const removeTask = () => {
@@ -95,7 +95,7 @@ input.addEventListener("change", handleInput);
 const clearAll = document.createElement("button")
 clearAll.textContent = "Delete all tasks"
 emptyDiv.appendChild(clearAll)
-clearAll.classList.add("btn-add")
+clearAll.classList.add("btn-delete-all")
 
 const handleClearAll = ()=>{
   ul.textContent = ""
