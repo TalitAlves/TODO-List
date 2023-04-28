@@ -1,0 +1,114 @@
+
+body{
+    background: linear-gradient(109.6deg, rgba(119, 44, 232, 0.68) 11.5%, rgb(119, 44, 232) 91.2%);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    
+}
+
+
+h1{
+    color: white
+}
+
+
+.search{
+    min-width: 400px;
+    padding: 20px 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    border-radius: 5px;
+
+
+    
+}
+
+.task-input{
+    padding: 12px 70px;
+    border-radius: 5px;
+    border: 1px solid  rgb(121, 32, 205);
+  
+}
+
+.task-input:focus{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+
+.btn-add{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(121, 32, 205);
+    color: aliceblue;
+    transition: 300ms ease-in-out;
+
+}
+
+.btn-add:hover{
+    background-color: rgb(91, 12, 166) ;
+}
+
+.list{
+    padding: 0;
+}
+
+p {
+    color:rgb(121, 32, 205);
+    font-size: 20px;
+    font-weight: 900;
+}
+.li-container{
+    background-color:aliceblue; 
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.li-text {
+  list-style: none;
+  margin:20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 350px;
+  border:rgb(91, 12, 166) 1px solid;
+  padding: 8px 10px ;
+  border-radius: 5px;
+}
+
+.checkbox{
+    font-size: 20px;
+}
+
+label{
+    text-align: left;
+    width: 240px;
+    font-size: 17px;   
+}
+.button {
+  margin-left: 10px;
+}
+
+
+.done{
+   text-decoration: line-through;
+}
+
+.pendente {
+    text-decoration: none;
+}
+
+.remove{
+    display: none;
+}
+
+
