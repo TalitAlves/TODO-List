@@ -10,34 +10,39 @@
 const input = document.querySelector("#add-task");
 const btnAddTask = document.querySelector(".btn-add");
 const ul = document.querySelector("ul");
-const emptyDiv = document.querySelector(".empty")
 const inicialText = document.createElement ("p")
+const finalText = document.createElement ("p")
+const text = document.querySelector ("#text")
 const liContainer = document.querySelector(".li-container")
+const emptyDiv = document.querySelector(".empty")
 inicialText.textContent = "Add tasks to get started"
 inicialText.classList.add("p")
 liContainer.appendChild(inicialText)
 
+finalText.textContent = "All tasks completed"
+finalText.classList.add("remove")
+liContainer.appendChild(finalText)
+
 const takslist = [];
-const deleteTask = [];
 
 const checkAllTasks = () => {
-    if (ul.childNodes.length == 0){
-        const p = document.createElement
-        p.textContent = "All tasks complete"
-        emptyDiv.appendChild(p)
+    if (ul.childNodes.length === 0){
+      finalText.classList.remove("remove")
+      finalText.classList.add("p")
+       
     }
 };
 
 const addTask = (event) => {
   event.preventDefault();
   inicialText.classList.add("remove")
+  finalText.classList.add("remove")
  
   const inputValue = input.value.trim()
   if (inputValue === ""){
-    alert("Plese, add a task to creat a list")
-    
-
-  } else {
+    text.innerHTML = "Add a task"
+   } else {
+    text.innerHTML = ""
 
   const li = document.createElement("li");
   li.classList.add("li-text");
@@ -91,6 +96,7 @@ const handleInput = (event) => {
 
 btnAddTask.addEventListener("click", addTask);
 input.addEventListener("change", handleInput);
+
 
 const clearAll = document.createElement("button")
 clearAll.textContent = "Delete all tasks"

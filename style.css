@@ -40,6 +40,11 @@ h1{
     border: none;
 }
 
+#text{
+    display: block;
+    color: red
+}
+
 .btn-add{
     padding: 10px 10px;
     border-radius: 5px;
@@ -62,6 +67,7 @@ p {
     color:rgb(121, 32, 205);
     font-size: 20px;
     font-weight: 900;
+    display: block;
 }
 .li-container{
     background-color:aliceblue; 
